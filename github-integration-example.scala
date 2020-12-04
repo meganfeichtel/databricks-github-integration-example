@@ -24,3 +24,14 @@ display(filtered2)
 
 // COMMAND ----------
 
+val newDF = Seq(
+  (1, "fish"),
+  (8, "turtle")
+).toDF("number", "word")
+
+val union = someDF.union(newDF)
+
+display(union.orderBy("number"))
+
+// COMMAND ----------
+

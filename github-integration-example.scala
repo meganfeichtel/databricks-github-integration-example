@@ -18,3 +18,9 @@ display(filtered)
 
 // COMMAND ----------
 
+val filtered2 = someDF.filter($"number" <= 10)
+
+display(filtered2)
+
+// COMMAND ----------
+
